@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: "/TIENDA CYBERNEX/",
+  base: '/CYBERNEX-STORE/' // EXACTO el nombre de tu repo
 })
