@@ -78,13 +78,13 @@ function App() {
         <ProductCard
           title="PC Gamer RTX"
           price="4.500.000"
-          image="https://images.unsplash.com/photo-1587202372775-e8b02d1c5c9b"
+          image="public/Images/Pc.jpg"
         />
 
         <ProductCard
           title="PlayStation 5"
           price="2.800.000"
-          image="https://images.unsplash.com/photo-1606813902749-39c35d1c1a2b"
+          image="public/Images/Play5.jpg"
         />
 
         <ProductCard
@@ -96,7 +96,7 @@ function App() {
         <ProductCard
           title='Monitor Gamer 27"'
           price="1.200.000"
-          image="https://images.unsplash.com/photo-1587202372776-e8b02d1c5c9c"
+          image="public/Images/Monitor.jpg"
         />
 
         <ProductCard
