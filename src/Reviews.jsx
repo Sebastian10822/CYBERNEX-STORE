@@ -3,6 +3,10 @@ import Navbar from "./Navbar";
 import ProductCard from "./ProductCard";
 import Reviews from "./Reviews";
 
+import PcImg from "./assets/Images/Pc.jpg";
+import Play5Img from "./assets/Images/Play5.jpg";
+import MonitorImg from "./assets/Images/Monitor.jpg";
+
 function App() {
   const [neon, setNeon] = useState(true);
 
@@ -16,7 +20,7 @@ function App() {
     >
       <Navbar />
 
-      {/* BOTÓN MODO NEÓN */}
+      {/* BOTON MODO NEON */}
       <div style={{ textAlign: "center", marginTop: "15px" }}>
         <button
           onClick={() => setNeon(!neon)}
@@ -42,7 +46,6 @@ function App() {
           justifyContent: "center",
           alignItems: "center",
           background: "radial-gradient(circle at top, #0a1a3a, #05060f)",
-          textAlign: "center",
         }}
       >
         <h1
@@ -79,13 +82,13 @@ function App() {
         <ProductCard
           title="PC Gamer RTX"
           price="4.500.000"
-          image="/Images/Pc.jpg"
+          image={PcImg}
         />
 
         <ProductCard
           title="PlayStation 5"
           price="2.800.000"
-          image="/Images/Play5.jpg"
+          image={Play5Img}
         />
 
         <ProductCard
@@ -97,7 +100,7 @@ function App() {
         <ProductCard
           title='Monitor Gamer 27"'
           price="1.200.000"
-          image="/Images/Monitor.jpg"
+          image={MonitorImg}
         />
 
         <ProductCard
