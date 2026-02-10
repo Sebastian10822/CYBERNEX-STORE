@@ -4,19 +4,19 @@ import ProductCard from "./ProductCard";
 import Reviews from "./Reviews";
 
 function App() {
-
   const [neon, setNeon] = useState(true);
 
   return (
-    <div style={{
-      background: neon ? "#05060f" : "#ffffff",
-      minHeight: "100vh",
-      transition: "0.5s"
-    }}>
-
+    <div
+      style={{
+        background: neon ? "#05060f" : "#ffffff",
+        minHeight: "100vh",
+        transition: "0.5s",
+      }}
+    >
       <Navbar />
 
-      {/* BOTON MODO NEON */}
+      {/* BOTÓN MODO NEÓN */}
       <div style={{ textAlign: "center", marginTop: "15px" }}>
         <button
           onClick={() => setNeon(!neon)}
@@ -26,7 +26,7 @@ function App() {
             border: "none",
             background: "#00ffff",
             cursor: "pointer",
-            fontWeight: "bold"
+            fontWeight: "bold",
           }}
         >
           Cambiar Modo ⚡
@@ -42,6 +42,7 @@ function App() {
           justifyContent: "center",
           alignItems: "center",
           background: "radial-gradient(circle at top, #0a1a3a, #05060f)",
+          textAlign: "center",
         }}
       >
         <h1
@@ -78,13 +79,13 @@ function App() {
         <ProductCard
           title="PC Gamer RTX"
           price="4.500.000"
-          image="public/Images/Pc.jpg"
+          image="/Images/Pc.jpg"
         />
 
         <ProductCard
           title="PlayStation 5"
           price="2.800.000"
-          image="public/Images/Play5.jpg"
+          image="/Images/Play5.jpg"
         />
 
         <ProductCard
@@ -96,7 +97,7 @@ function App() {
         <ProductCard
           title='Monitor Gamer 27"'
           price="1.200.000"
-          image="public/Images/Monitor.jpg"
+          image="/Images/Monitor.jpg"
         />
 
         <ProductCard
@@ -114,7 +115,6 @@ function App() {
 
       {/* REVIEWS */}
       <Reviews />
-
     </div>
   );
 }
